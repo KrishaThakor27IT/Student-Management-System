@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f9aa;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #273644;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ead6d6;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    margin: 10px 5px;
+    border: 2px solid #4b1818;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #0b9cf6;
+    border: 2px solid #4b1818;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #052235;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4b1818;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+}
+
+th {
+    background-color: #207dbb;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+button.edit, button.delete {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+button.edit {
+    background-color: #f39c12;
+}
+
+button.edit:hover {
+    background-color: #e67e22;
+}
+
+button.delete {
+    background-color: #e74c3c;
+}
+
+button.delete:hover {
+    background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="number"] {
+        width: calc(100% - 20px);
+    }
+
+    button {
+        width: 100%;
+    }
